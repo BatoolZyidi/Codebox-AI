@@ -1,0 +1,15 @@
+[project]
+name = "codebox-ai"
+version = "1.0.0"
+description = "Voice-controlled coding assistant for blind and motor-impaired developers"
+requires-python = ">=3.11"
+dependencies = [
+  "websockets>=14.0,<17",
+  "sounddevice>=0.4.6",
+  "google-genai>=1.0.0",
+  "pydantic-settings>=2.2",
+  "pathspec>=0.12",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
